@@ -1,4 +1,4 @@
-Laravel project to implement CRUD using API
+# Laravel project to implement CRUD using API
 
 Routing is implemented in the file: routes\api.php
 
@@ -6,31 +6,31 @@ The developed controllers are located in the folder: app\Http\Controllers (UserC
 CommentController)
 
 Request validation rules are specified in the class:
-App\Http\Requests\Comment\StoreRequest.php
-App\Http\Requests\Comment\UpdateRequest.php
-App\Http\Requests\Company\StoreRequest.php
-App\Http\Requests\Company\UpdateRequest.php
-App\Http\Requests\User\StoreRequest.php
-App\Http\Requests\User\UpdateRequest.php
+    App\Http\Requests\Comment\StoreRequest.php
+    App\Http\Requests\Comment\UpdateRequest.php
+    App\Http\Requests\Company\StoreRequest.php
+    App\Http\Requests\Company\UpdateRequest.php
+    App\Http\Requests\User\StoreRequest.php
+    App\Http\Requests\User\UpdateRequest.php
 
 The migration files are located in the directory: database\migrations
 
 Resources class:
-App\Http\Resources\Comment\CommentResource.php
-App\Http\Resources\User\UserResource.php
-App\Http\Resources\Company\CompanyResource.php
+    App\Http\Resources\Comment\CommentResource.php
+    App\Http\Resources\User\UserResource.php
+    App\Http\Resources\Company\CompanyResource.php
 
 Model class:
-app\Models\Company.php
-app\Models\User.php
-app\Models\Comment.php
+    app\Models\Company.php
+    app\Models\User.php
+    app\Models\Comment.php
 
 Service class:
-app\Service\MyFormRequest.php
+    app\Service\MyFormRequest.php
 
 Resource files are located in the directory: public\
 
-Clone the project into the directory with the server:
+## Clone the project into the directory with the server:
 
 git clone https://github.com/pkrotkikh/laravel-project-example.git
 
@@ -59,7 +59,7 @@ php artisan serve
 
 Open the site in a browser at http://localhost:8000
 
-Examples of API requests:
+## Examples of API requests:
 
 GET|HEAD        api/comments .............................................................................................................. comments.index › CommentController@index  
 POST            api/comments .............................................................................................................. comments.store › CommentController@store  
